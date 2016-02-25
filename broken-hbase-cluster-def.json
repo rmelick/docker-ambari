@@ -1,0 +1,17 @@
+{
+  "blueprint" : "broken-hbase-blueprint",
+   "host_groups" :[
+    {
+      "name" : "master",     
+      "hosts" : [         
+        {
+          "fqdn" : "amb1.service.consul"
+        }]
+    },
+    {
+      "name" : "compute",         
+      "host_count" : 2
+    }
+    
+  ]
+}
